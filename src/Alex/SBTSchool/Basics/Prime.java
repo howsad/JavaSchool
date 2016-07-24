@@ -28,7 +28,9 @@ public class Prime {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         TreeSet<Integer> primes = new TreeSet<>();
-        primes.add(2);
+        if (n > 1) {
+            primes.add(2);
+        }
         for (int i = 3; i <= n; i += 2) {
             boolean isPrime = true;
             for (Integer prime : primes) {

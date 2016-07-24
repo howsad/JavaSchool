@@ -41,7 +41,7 @@ public class Euclid {
             }
             steps++;
         }
-        int gcd = (a + b) == 1 ? 0 : (a + b);
+        int gcd = (a + b);
         System.out.println(steps + " " + gcd);
     }
 }
